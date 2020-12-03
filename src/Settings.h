@@ -71,6 +71,7 @@ public:
 
     void loop();
     void reset();
+    void toggle();
     void saveLater();
     void saveSettings();
     void saveEffects();

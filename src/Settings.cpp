@@ -70,6 +70,12 @@ void Settings::loop()
     }
 }
 
+void Settings::toggle()
+{
+    mySettings->generalSettings.working = !mySettings->generalSettings.working;
+    mqtt->update();
+}
+
 void Settings::saveLater()
 {
     lampWebServer->update();

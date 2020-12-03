@@ -138,7 +138,7 @@ void processButton()
     button->tick();
     if (button->isSingle()) {
         Serial.println(F("Single button"));
-        mySettings->generalSettings.working = !mySettings->generalSettings.working;
+        mySettings->toggle();
         mySettings->saveLater();
     }
     if (!mySettings->generalSettings.working) {
